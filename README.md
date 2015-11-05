@@ -3,10 +3,9 @@ semver
 
 Semantic Versioning parser and comparator in Go (golang)
 
-Please, use the following import path to ensure a stable API:
+[![GoDoc](https://godoc.org/github.com/rainycape/semver?status.svg)](https://godoc.org/github.com/rainycape/semver)
+
 
 ```go
-    import "gopkgs.com/semver.v1"
+    import "github.com/rainycape/semver"
 ```
-
-View other available versions, documentation and examples at http://gopkgs.com/semver
