@@ -113,6 +113,15 @@ func Parse(version string) (*Version, error) {
 	return v, nil
 }
 
+// MustParse works like Parse, but panics in case of error.
+func MustParse(version string) *Version {
+	p, err := Parse(version)
+	if err != nil {
+		panic(err)
+	}
+	return p
+}
+
 // Lower is a shorthand for v.Compare(w) < 0.
 func (v *Version) Lower(w *Version) bool {
 	return v.Compare(w) < 0
